@@ -1,0 +1,453 @@
+@charset "utf-8";
+
+/*webページ全体の装飾を定義*/
+body {
+	margin: 0;
+	padding: 0;
+	/*font-family: 'Yu Mincho Light', 'YuMincho', 'Yu Mincho', '游明朝体',
+		'Sitka Small', cursive;*/
+	font-family: 'Montserrat', 'Kosugi Maru', sans-serif;
+	background-color: #e8e8e8;
+}
+
+.a {
+	text-decoration: none;
+}
+
+.a:hover {
+	text-decoration: none;
+}
+
+/*
+class名：container（全体を囲っている）の装飾を定義*/
+.container {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+/*
+class名：header（ヘッダー部分）の装飾*/
+.header {
+	width: 100%;
+	padding: 20px 15% 20px;
+	position: fixed;
+	top: 0;
+	display: flex;
+	align-items: center;
+	background-color: #fff;
+}
+
+/*
+class名：header（ヘッダー部分）内のaタグで囲っているリンクの装飾*/
+.header a {
+	text-decoration: none;
+	color: #4b4b4b;
+	transition: .3s;
+}
+
+/*
+class名：header（ヘッダー部分）内のaタグで囲っているリンクを、マウスオーバーしたときの装飾*/
+.header a:hover {
+	text-decoration: none;
+	color: #f05454;
+}
+
+/*
+class名：header（ヘッダー部分）内のメニュー部分の装飾*/
+nav {
+	width: 400px;
+	margin: 0 20% 0 auto;
+}
+
+/*
+class名：header（ヘッダー部分）内のメニュー部分の装飾（リスト全体に適用）*/
+ul {
+	list-style: none;
+	margin: 0;
+	display: flex;
+	font-weight: bold;
+}
+
+/*
+class名：header（ヘッダー部分）内のメニュー部分の装飾（各リストに適用）*/
+li {
+	margin: 0 0 0 30px;
+}
+
+/*
+class名：main（メイン部分）の装飾*/
+.main {
+	width: 70%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 150px;
+	margin-bottom: 30px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+	flex: 1;
+	/*display: flex;*/
+	background-color: #fff;
+}
+
+/*
+class名：fotter（フッター部分）の装飾*/
+.footer {
+	padding: 5px 0px;
+	height: 50px;
+	background-color: #666;
+	color: #222831;
+	text-align: center;
+	font-size: 10px;
+	color: #fff;
+}
+
+/* ***** class名：title（見出し）の装飾 ***** */
+h2 {
+	position: relative;
+	padding: 1.5rem;
+	text-align: center;
+}
+
+h2:before {
+	position: absolute;
+	bottom: -1px;
+	left: calc(50% - 30px);
+	width: 60px;
+	height: 5px;
+	content: '';
+	border-radius: 3px;
+	background: #f05454;
+}
+
+/* ***** class名：input（入力フォーム）の装飾 ***** */
+.input input:valid {
+	background: #f8f8f8;
+	border: 1px solid #f8f8f8;;
+	width: 200px;
+	height: 30px;
+	padding: 2px 10px;
+}
+
+/* ***** class名：input2（書籍登録検索フォーム）の装飾 ***** */
+.inputForm2 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: baseline;
+}
+
+.input2 input:valid {
+	background: #f8f8f8;
+	border: 1px solid #f8f8f8;;
+	width: 500px;
+	height: 30px;
+	padding: 2px 10px;
+}
+
+.input2 input::placeholder {
+	color: #bbbbbb;
+}
+
+/* ***** class名：button1（ログイン/ログアウトボタン）の装飾 ***** */
+.button1 {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	position: relative;
+	width: 200px;
+	padding: 0.8em;
+	border-radius: 30px;
+	text-align: center;
+	text-decoration: none;
+	background: #f05454;
+	color: #fff;
+	/*font-family: 'Yu Mincho Light', 'YuMincho', 'Yu Mincho', '游明朝体',
+		'Sitka Small', cursive;*/
+	font-family: 'Montserrat', 'Kosugi Maru', sans-serif;
+	font-weight: bold;
+	box-shadow: 0px 0px 0px 0px #668ad8;
+	border: none;
+	transition: .4s;
+}
+
+.button1:hover {
+	cursor: pointer;
+	text-decoration: none;
+	background: #e8e8e8;
+	box-shadow: 0px 0px 0px 0px #668ad8;
+	color: #333;
+}
+
+.button1 a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.button1 a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+/* ***** class名：button2（通常ボタン）の装飾 ***** */
+.button2 {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	position: relative;
+	width: 200px;
+	padding: 0.8em;
+	border-radius: 30px;
+	text-align: center;
+	text-decoration: none;
+	background: #30475e;
+	color: #fff;
+	/*font-family: 'Yu Mincho Light', 'YuMincho', 'Yu Mincho', '游明朝体',
+		'Sitka Small', cursive;*/
+	font-family: 'Montserrat', 'Kosugi Maru', sans-serif;
+	font-weight: bold;
+	box-shadow: 0px 0px 0px 0px #668ad8;
+	border: none;
+	transition: .4s;
+}
+
+.button2:hover {
+	cursor: pointer;
+	text-decoration: none;
+	background: #f05454;
+	box-shadow: 0px 0px 0px 0px #668ad8;
+	color: #fff;
+}
+
+.button2 a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.button2 a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+/* ***** class名：button3（返却ボタン）の装飾 ***** */
+.button3 {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	position: relative;
+	width: 80px;
+	padding: 0.6em;
+	border-radius: 30px;
+	text-align: center;
+	text-decoration: none;
+	background: #30475e;
+	color: #fff;
+	/*font-family: 'Yu Mincho Light', 'YuMincho', 'Yu Mincho', '游明朝体',
+		'Sitka Small', cursive;*/
+	font-family: 'Montserrat', 'Kosugi Maru', sans-serif;
+	font-weight: bold;
+	box-shadow: 0px 0px 0px 0px #668ad8;
+	border: none;
+	transition: .4s;
+}
+
+.button3:hover {
+	cursor: pointer;
+	text-decoration: none;
+	background: #f05454;
+	box-shadow: 0px 0px 0px 0px #668ad8;
+	color: #fff;
+}
+
+.button3 a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.button3 a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+/* ***** class名：button4（ログイン/ログアウトボタン）の装飾 ***** */
+.button4 {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	position: relative;
+	width: 60%;
+	padding: 0.8em;
+	border-radius: 30px;
+	text-align: center;
+	text-decoration: none;
+	background: #30475e;
+	color: #fff;
+	/*font-family: 'Yu Mincho Light', 'YuMincho', 'Yu Mincho', '游明朝体',
+		'Sitka Small', cursive;*/
+	font-family: 'Montserrat', 'Kosugi Maru', sans-serif;
+	font-weight: bold;
+	box-shadow: 0px 0px 0px 0px #668ad8;
+	border: none;
+	transition: .4s;
+}
+
+.button4:hover {
+	cursor: pointer;
+	text-decoration: none;
+	background: #f05454;
+	box-shadow: 0px 0px 0px 0px #668ad8;
+	color: #fff;
+}
+
+.button4 a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.button4 a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+/* ***** 書籍一覧表示の装飾 ***** */
+.box_area {
+	margin-left: 30px;
+	margin-right: 30px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: flex-start;
+	padding: 40px;
+	background: #fff;
+}
+
+.box_item {
+	margin-top: 15px;
+	margin-bottom: 40px;
+	margin-left: 12px;
+	margin-right: 12px;
+	background: #fff;
+	padding: 7px;
+	width: 30%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-direction: normal;
+	-webkit-box-orient: vertical;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	color: #5d627b;
+	background: white;
+	border-top: solid 5px #5d627b;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+.box_item figure {
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+
+.items:after {
+	content: "";
+	display: block;
+	width: 30%;
+	height: 0;
+}
+
+.box_item div {
+	margin-top: 0;
+	margin-bottom: 6px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	text-align: left;
+}
+
+.box_item span {
+	font-size: 16px;
+}
+
+.box_item p {
+	font-size: 12px;
+}
+
+.box_item img {
+	width: 100%;
+}
+
+/*テーブルに関する装飾*/
+table {
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+table th, table td {
+	padding: 10px 0;
+	text-align: center;
+}
+
+table tr:nth-child(odd) {
+	background-color: #eee
+}
+
+table img {
+	width: 30%;
+}
+
+/*書籍検索結果（詳細表示）に関する装飾*/
+.searchResult {
+	margin-left: 100px;
+	margin-right: 100px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.searchResultImg {
+	width: 30%;
+}
+
+.searchResultImg img {
+	width: 200px;
+}
+
+.searchResultDoc {
+	width: 70%;
+}
+
+.searchResultDoc table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+
+.searchResultDoc table tr {
+	border-bottom: solid 1px #eee;
+}
+
+.searchResultDoc table th {
+	text-align: center;
+	width: 30%;
+	padding: 15px 0;
+}
+
+.searchResultDoc table td {
+	text-align: left;
+	padding: 15px 0;
+}
+
+.fo {
+	font-size: 14px;
+}
