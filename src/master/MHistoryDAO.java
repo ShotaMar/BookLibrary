@@ -10,9 +10,9 @@ import java.util.List;
 
 public class MHistoryDAO {
 
-	private final String URL = "jdbc:mysql://172.16.71.120:3306/booklibrary?serverTimezone=JST";
-	private final String ID = "03user";
-	private final String PASS = "03user03pass";
+	private final String URL = "jdbc:mysql://-.-.-.-:-/booklibrary?serverTimezone=JST";
+	private final String USER = "----";
+	private final String PASS = "----";
 
 	// 各ユーザの履歴一覧を全表示するメソッド
 	public List<MHistoryDTO> getHistoryList(String userId) {
