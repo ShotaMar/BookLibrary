@@ -8,9 +8,9 @@ import java.sql.SQLException;
 
 public class GUserDAO {
 
-	private final String URL = "jdbc:mysql://172.16.71.120:3306/booklibrary?serverTimezone=JST";
-	private final String ID = "03user";
-	private final String PASS = "03user03pass";
+	private final String URL = "jdbc:mysql://-.-.-.-:-/booklibrary?serverTimezone=JST";
+	private final String USER = "----";
+	private final String PASS = "----";
 	private String SQL = "";
 
 	//	public GUserDTO getUserInfo(String inId,String inPass){
