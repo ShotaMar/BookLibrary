@@ -13,9 +13,9 @@ import java.util.List;
 
 public class UBookDAO {
 
-	private final String URL = "jdbc:mysql://172.16.71.120:3306/booklibrary?serverTimezone=JST";
-	private final String USER = "03user";
-	private final String PASS = "03user03pass";
+	private final String URL = "jdbc:mysql://-.-.-.-:-/booklibrary?serverTimezone=JST";
+	private final String USER = "----";
+	private final String PASS = "----";
 
 	//*********************************************************************************************
 	// 書籍を借りるとき動くメソッド（書籍の貸出状況を更新する）
